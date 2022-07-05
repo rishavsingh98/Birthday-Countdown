@@ -15,7 +15,7 @@ const today = new Date();
 const currentDateTime = new Date(`${today.getMonth()} ${today.getDate()} ${currentYear}`);
 
 //JavaScript Ternary Operator
-const age = currentDateTime < birthday ? currentYear - 1997 - 1 : currentYear - 1997;
+const age = currentDateTime < birthday ? currentYear - 1996 - 1 : currentYear - 1996;
 
 // Set background year
 dateyear.innerText = currentYear;
@@ -63,7 +63,7 @@ function updateCountdown() {
     hours.innerHTML = hour < 10 ? '0' + hour : hour;
     minutes.innerHTML = minute < 10 ? '0' + minute : minute;
     seconds.innerHTML = second < 10 ? '0' + second : second; 
-    yearold.innerText = `${nextAge+1}th Birthday!`;
+    yearold.innerText = `${nextAge} Birthday!`;
   }
 }
 
