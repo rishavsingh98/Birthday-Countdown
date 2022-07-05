@@ -48,11 +48,11 @@ function updateCountdown() {
    const july = now.getMonth() === birthday.getMonth() && now.getDate() === birthday.getDate()
 
   if (july) {
-    console.log('Happy Birthday Pallai Mahapatra')
+    console.log('Happy Birthday Pallabi Mahapatra')
     message.innerHTML = '<br> Guys and Gals, It gives me great pleasure to notify you that today is Pallabi birthday.<br>Happy Birthday!! Hope she had a nice Birthday Bash!!'
     countdown.style.display = "none"
     birthdayTime.style.display = "none"
-    yearold.innerText = `${age+1} Birthday!`;
+    yearold.innerText = `${age+1}th Birthday!`;
     clearInterval(timerId)
     return
   }
@@ -63,7 +63,7 @@ function updateCountdown() {
     hours.innerHTML = hour < 10 ? '0' + hour : hour;
     minutes.innerHTML = minute < 10 ? '0' + minute : minute;
     seconds.innerHTML = second < 10 ? '0' + second : second; 
-    yearold.innerText = `${nextAge} Birthday!`;
+    yearold.innerText = `${nextAge}th Birthday!`;
   }
 }
 
